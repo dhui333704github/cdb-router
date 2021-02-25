@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<router-configurations xmlns="http://www.expd.com/xsd/jms/cdb"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.expd.com/xsd/jms/cdb router-configuration.xsd">
+	<environment  domain="INT">
+		<jms-provider>
+			<messagingProviderHostName>localhost</messagingProviderHostName>
+			<messagingProviderPortNumber>2507</messagingProviderPortNumber>
+			<userName>app_cdb_router</userName>
+			<password>app_cdb_router</password>
+			<brokerNode>CHQ-PATRICKP-XP</brokerNode>
+		</jms-provider>
+		<backup-jms-provider>
+			<messagingProviderHostName>localhost</messagingProviderHostName>
+			<messagingProviderPortNumber>7777</messagingProviderPortNumber>
+		</backup-jms-provider>
+		<email-contact>patrick.podenski@expeditors.com</email-contact>
+		</environment>
+	<environment domain="DEV">
+		<jms-provider>
+			<messagingProviderHostName>msgd-chq.chq.ei</messagingProviderHostName>
+			<messagingProviderPortNumber>8176</messagingProviderPortNumber>
+			<userName>app_cdb_router</userName>
+			<password>app_cdb_router</password>
+			<brokerNode>dev2_CHQ1_node</brokerNode>
+		</jms-provider>
+		<email-contact>patrick.podenski@expeditors.com</email-contact>
+		<email-contact>damion.provitola@expeditors.com</email-contact>
+	</environment>
+	<environment domain="QA">
+		<jms-provider>
+			<messagingProviderHostName>mgqai-chq.chq.ei</messagingProviderHostName>
+			<messagingProviderPortNumber>28600</messagingProviderPortNumber>
+			<userName>app_cdb_router</userName>
+			<password>app_cdb_router</password>
+			<brokerNode>qai_CHQ1_node</brokerNode>
+		</jms-provider>
+		<backup-jms-provider>
+			<messagingProviderHostName>mgqai-chq-bu.chq.ei</messagingProviderHostName>
+			<messagingProviderPortNumber>28600</messagingProviderPortNumber>
+		</backup-jms-provider>
+		<email-contact>alex.lee@expeditors.com</email-contact>
+	</environment>
+	<environment domain="PROD">
+		<jms-provider>
+			<messagingProviderHostName>msg.chq.ei</messagingProviderHostName>
+			<messagingProviderPortNumber>8198</messagingProviderPortNumber>
+			<userName>app_cdb_router</userName>
+			<password>app_cdb_router</password>
+			<brokerNode>pd2_CHQ1_node</brokerNode>
+		</jms-provider>
+		<backup-jms-provider>
+			<messagingProviderHostName>msg-bu.chq.ei</messagingProviderHostName>
+			<messagingProviderPortNumber>8198</messagingProviderPortNumber>
+		</backup-jms-provider>
+		<email-contact>damion.provitola@expeditors.com</email-contact>
+	</environment>
+</router-configurations>

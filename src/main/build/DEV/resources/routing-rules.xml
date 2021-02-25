@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routing-rules xmlns="http://www.expd.com/xsd/cdb"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.expd.com/xsd/cdb routing-rules.xsd">
+	<environment domain="PROD">
+		<cdb-application-queue name="CDBIMPORT">
+			<default-routing-rule>CDBCollector_CDBIMPORT0_InboundQueue</default-routing-rule>
+			<failed-routing-rule>CDBCollector_CDBIMPORT-FAILED_InboundQueue</failed-routing-rule>
+			
+			<!-- WalMart Branches (SE Asia) -->
+			<cdb-routing-rule branchCode="BJS">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BKK">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DLC">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JHB">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JKT">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="KUL">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MNL">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NGB">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NHP">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NKG">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PEN">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SEL">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SGN">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SHA">CDBCollector_CDBIMPORT6_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SIN">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SUB">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SYD">CDBCollector_CDBIMPORT6_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TAO">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TPE">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TYO">CDBCollector_CDBIMPORT6_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="XMN">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			
+			<!-- Large Branches -->
+			<cdb-routing-rule branchCode="LAX">CDBCollector_CDBIMPORT1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ORD">CDBCollector_CDBIMPORT2_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CPC">CDBCollector_CDBIMPORT2_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JFK">CDBCollector_CDBIMPORT2_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SFO">CDBCollector_CDBIMPORT2_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LRD">CDBCollector_CDBIMPORT3_InboundQueue</cdb-routing-rule>
+			
+			<!-- Medium Branches -->
+			<cdb-routing-rule branchCode="DFW">CDBCollector_CDBIMPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ORF">CDBCollector_CDBIMPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SEA">CDBCollector_CDBIMPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ELP">CDBCollector_CDBIMPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SAV">CDBCollector_CDBIMPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ATL">CDBCollector_CDBIMPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MEM">CDBCollector_CDBIMPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BOS">CDBCollector_CDBIMPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="YYZ">CDBCollector_CDBIMPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="IAH">CDBCollector_CDBIMPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ZZZ">CDBCollector_CDBIMPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="AMS">CDBCollector_CDBIMPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CLE">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="HKG">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			
+			<!-- Small Branches -->
+			<cdb-routing-rule branchCode="DTW">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="EWR">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CMH">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LHR">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PDX">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SDF">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CLT">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MSP">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CHS">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JNB">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MFE">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MIA">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NLD">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="IND">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SAN">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="STL">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PHL">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TUL">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MVD">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+            <cdb-routing-rule branchCode="HAJ">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+            <cdb-routing-rule branchCode="CPH">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+		</cdb-application-queue>
+		
+		<cdb-application-queue name="CDBEXPORT">
+			<default-routing-rule>CDBCollector_CDBEXPORT0_InboundQueue</default-routing-rule>
+			<failed-routing-rule>CDBCollector_CDBEXPORT-FAILED_InboundQueue</failed-routing-rule>
+			<system-destin-default revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</system-destin-default>
+			
+
+				<!-- Air Cargo Rules -->
+			<cdb-routing-rule branchCode="ABZ" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ADL" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="AKL" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ALC" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="AMM" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="AMS" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ANK" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="APPL" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ATH" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ATL" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="AUH" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="AUS" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BAH" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BCN" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BEY" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BFS" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BHX" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BJS" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BKK" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BLR" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BNA" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BNE" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BOD" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BOG" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BOM" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BOS" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BRS" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BRU" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BUD" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BUE" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BUH" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BWI" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CAI" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CAN" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CDG" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CHQJ" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CHS" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CJS" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CKG" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CLE" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CLT" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CMB" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CMH" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CPC" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CPT" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CTU" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CVG" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CWB" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DAC" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DEL" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DEN" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DFW" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DLC" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DMM" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DNG" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DOH" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DTW" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DUB" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DUR" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DUS" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DXB" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="EC0" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="EDIC" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ELP" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="EMA" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="EPL" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="EWR" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="FLR" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="FOC" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="FQ" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="FRA" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="GDL" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="GLA" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="GOT" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="GUA" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="HAM" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="HAN" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="HEL" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="HGH" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="HKG" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="HKG1" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="HKG2" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="HKG3" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="IAD" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="IAH" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="IND" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="IST" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="IZM" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JED" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JFK" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JHB" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JKT" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JNB" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="KHI" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="KUL" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="KWI" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LAX" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LAX1" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LAX2" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LAX3" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LHE" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LHR" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LIL" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LIM" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LIS" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LRD" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LUG" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LYS" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MAA" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MAD" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MAN" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MAO" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MCI" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MCO" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MCT" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MEL" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MEM" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MEX" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MFE" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MIA" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MIL" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MKE" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MNL" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MSP" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MSY" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MTY" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MUC" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NGB" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NH1" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NKG" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NLD" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NOG" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NOX" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NUE" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="OPO" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ORD" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ORD1" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ORD2" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ORD3" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ORF" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ORK" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="OSA" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="OSL" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PDX" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PEN" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PER" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PHL" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PHX" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PIT" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PNH" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="POA" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PRG" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PUS" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="QIN" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="QIV" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="RDU" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="REX" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="RIO" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="RTM" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="RUH" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SAN" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SAO" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SAV" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SCL" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SDF" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SEA" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SEL" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SFO" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SGN" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SHA" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SHA1" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SHA2" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SHA3" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SIA" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SIN" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SJO" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SJU" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SLC" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SNN" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="STL" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="STO" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="STR" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SUB" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SYD" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SZV" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SZX" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TAO" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TNR" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TPA" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TPE" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TSN" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TYO" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="VCP" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="VIE" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="VRN" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="WAW" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="WUH" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="XMN" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="YNT" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="YUL" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="YVR" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="YYC" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="YYZ" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ZIX" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ZRH" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ZZZ" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TUL" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MVD" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+            <cdb-routing-rule branchCode="HAJ" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+            <cdb-routing-rule branchCode="CPH" revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</cdb-routing-rule>
+
+				<!-- Air HTS Rules -->
+			<cdb-routing-rule branchCode="ABZ" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ADL" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="AKL" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ALC" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="AMM" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="AMS" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ANK" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="APPL" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ATH" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ATL" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="AUH" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="AUS" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BAH" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BCN" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BEY" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BFS" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BHX" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BJS" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BKK" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BLR" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BNA" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BNE" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BOD" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BOG" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BOM" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BOS" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BRS" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BRU" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BUD" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BUE" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BUH" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BWI" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CAI" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CAN" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CDG" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CHQJ" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CHS" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CJS" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CKG" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CLE" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CLT" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CMB" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CMH" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CPC" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CPT" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CTU" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CVG" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CWB" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DAC" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DEL" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DEN" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DFW" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DLC" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DMM" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DNG" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DOH" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DTW" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DUB" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DUR" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DUS" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DXB" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="EC0" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="EDIC" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ELP" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="EMA" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="EPL" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="EWR" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="FLR" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="FOC" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="FQ" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="FRA" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="GDL" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="GLA" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="GOT" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="GUA" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="HAM" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="HAN" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="HEL" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="HGH" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="HKG" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="HKG1" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="HKG2" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="HKG3" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="IAD" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="IAH" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="IND" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="IST" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="IZM" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JED" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JFK" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JHB" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JKT" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JNB" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="KHI" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="KUL" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="KWI" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LAX" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LAX1" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LAX2" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LAX3" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LHE" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LHR" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LIL" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LIM" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LIS" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LRD" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LUG" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LYS" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MAA" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MAD" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MAN" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MAO" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MCI" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MCO" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MCT" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MEL" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MEM" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MEX" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MFE" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MIA" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MIL" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MKE" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MNL" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MSP" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MSY" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MTY" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MUC" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NGB" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NH1" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NKG" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NLD" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NOG" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NOX" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NUE" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="OPO" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ORD" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ORD1" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ORD2" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ORD3" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ORF" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ORK" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="OSA" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="OSL" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PDX" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PEN" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PER" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PHL" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PHX" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PIT" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PNH" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="POA" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PRG" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PUS" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="QIN" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="QIV" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="RDU" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="REX" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="RIO" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="RTM" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="RUH" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SAN" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SAO" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SAV" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SCL" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SDF" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SEA" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SEL" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SFO" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SGN" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SHA" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SHA1" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SHA2" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SHA3" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SIA" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SIN" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SJO" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SJU" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SLC" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SNN" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="STL" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="STO" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="STR" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SUB" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SYD" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SZV" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SZX" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TAO" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TNR" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TPA" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TPE" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TSN" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TYO" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="VCP" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="VIE" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="VRN" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="WAW" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="WUH" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="XMN" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="YNT" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="YUL" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="YVR" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="YYC" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="YYZ" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ZIX" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ZRH" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ZZZ" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TUL" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MVD" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+            <cdb-routing-rule branchCode="HAJ" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+            <cdb-routing-rule branchCode="CPH" revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</cdb-routing-rule>
+
+
+			<!-- Apple Export -->
+			<cdb-routing-rule branchCode="SHA" revenueSysDestin="APPLSFO">CDBCollector_CDBEXPORT8_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PDX" revenueSysDestin="APPLSFO">CDBCollector_CDBEXPORT8_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LHR" revenueSysDestin="APPLSFO">CDBCollector_CDBEXPORT8_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MSP" revenueSysDestin="APPLSFO">CDBCollector_CDBEXPORT8_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SIN" revenueSysDestin="APPLSFO">CDBCollector_CDBEXPORT8_InboundQueue</cdb-routing-rule>
+			
+			<!-- WalMart Branches (SE Asia) -->
+			<cdb-routing-rule branchCode="BJS">CDBCollector_CDBEXPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BKK">CDBCollector_CDBEXPORT6_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DLC">CDBCollector_CDBEXPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="EDIC">CDBCollector_CDBEXPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JHB">CDBCollector_CDBEXPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JKT">CDBCollector_CDBEXPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="KUL">CDBCollector_CDBEXPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MNL">CDBCollector_CDBEXPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NGB">CDBCollector_CDBEXPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NKG">CDBCollector_CDBEXPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PEN">CDBCollector_CDBEXPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PNH">CDBCollector_CDBEXPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SEL">CDBCollector_CDBEXPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SGN">CDBCollector_CDBEXPORT6_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SHA">CDBCollector_CDBEXPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SIN">CDBCollector_CDBEXPORT6_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SUB">CDBCollector_CDBEXPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SYD">CDBCollector_CDBEXPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TAO">CDBCollector_CDBEXPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TPE">CDBCollector_CDBEXPORT6_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TSN">CDBCollector_CDBEXPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TYO">CDBCollector_CDBEXPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="XMN">CDBCollector_CDBEXPORT7_InboundQueue</cdb-routing-rule>
+			
+			<!-- Large Branches -->
+			<cdb-routing-rule branchCode="HKG">CDBCollector_CDBEXPORT1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NHP">CDBCollector_CDBEXPORT2_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NH1">CDBCollector_CDBEXPORT2_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SZX">CDBCollector_CDBEXPORT2_InboundQueue</cdb-routing-rule>
+			
+			<!-- Medium Branches -->
+			<cdb-routing-rule branchCode="ORD">CDBCollector_CDBEXPORT2_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="GDL">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MAA">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LAX">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="IAH">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SFO">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CMB">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			
+			<!-- Small Branches -->
+			<cdb-routing-rule branchCode="MIL">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DAC">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JFK">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MIA">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ATL">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BOS">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BOM">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DTW">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SEA">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DFW">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ORF">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BCN">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="AMS">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="IST">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LHR">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="FLR">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="YYZ">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CAN">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DEL">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="KHI">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="GUA">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="FRA">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CVG">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CLE">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="STR">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MSP">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="EWR">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="OSA">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DUR">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MEM">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CAI">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PDX">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BRU">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PHL">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CDG">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ELP">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TUL">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MVD">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+            <cdb-routing-rule branchCode="HAJ">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+            <cdb-routing-rule branchCode="CPH">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+		</cdb-application-queue>
+		
+		<cdb-application-queue name="CCXORDER">
+			<default-routing-rule>CDBCollector_CCXORDER0_InboundQueue</default-routing-rule>
+			<failed-routing-rule>CDBCollector_CCXORDER-FAILED_InboundQueue</failed-routing-rule>
+			
+			<!-- WalMart Branches (SE Asia) -->
+			<cdb-routing-rule branchCode="BJS">CDBCollector_CCXORDER5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BKK">CDBCollector_CCXORDER7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DLC">CDBCollector_CCXORDER6_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="EDIC">CDBCollector_CCXORDER3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JHB">CDBCollector_CCXORDER4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JKT">CDBCollector_CCXORDER7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="KUL">CDBCollector_CCXORDER4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MNL">CDBCollector_CCXORDER4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NGB">CDBCollector_CCXORDER7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NKG">CDBCollector_CCXORDER6_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PEN">CDBCollector_CCXORDER7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PNH">CDBCollector_CCXORDER4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SEL">CDBCollector_CCXORDER4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SGN">CDBCollector_CCXORDER6_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SHA">CDBCollector_CCXORDER4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SIN">CDBCollector_CCXORDER7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SUB">CDBCollector_CCXORDER4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SYD">CDBCollector_CCXORDER4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TAO">CDBCollector_CCXORDER5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TPE">CDBCollector_CCXORDER7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TSN">CDBCollector_CCXORDER5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TYO">CDBCollector_CCXORDER4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="XMN">CDBCollector_CCXORDER7_InboundQueue</cdb-routing-rule>
+			
+			<!-- Large Branches -->
+			<cdb-routing-rule branchCode="HKG">CDBCollector_CCXORDER1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SZX">CDBCollector_CCXORDER2_InboundQueue</cdb-routing-rule>
+			
+			<!-- Medium Branches -->
+			<cdb-routing-rule branchCode="NHP">CDBCollector_CCXORDER2_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NH1">CDBCollector_CCXORDER2_InboundQueue</cdb-routing-rule>
+		</cdb-application-queue>
+	</environment>	
+</routing-rules>

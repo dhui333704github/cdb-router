@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routing-rules xmlns="http://www.expd.com/xsd/cdb"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.expd.com/xsd/cdb routing-rules.xsd">
+	<environment domain="PROD">
+		<cdb-application-queue name="CDBIMPORT">
+			<default-routing-rule>CDBCollector_CDBIMPORT0_InboundQueue</default-routing-rule>
+			<failed-routing-rule>CDBCollector_CDBIMPORT-FAILED_InboundQueue</failed-routing-rule>
+			
+			<!-- WalMart Branches (SE Asia) -->
+			<cdb-routing-rule branchCode="BJS">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BKK">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DLC">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JHB">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JKT">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="KUL">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MNL">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NGB">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NHP">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NKG">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PEN">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SEL">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SGN">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SHA">CDBCollector_CDBIMPORT6_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SIN">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SUB">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SYD">CDBCollector_CDBIMPORT6_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TAO">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TPE">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TYO">CDBCollector_CDBIMPORT6_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="XMN">CDBCollector_CDBIMPORT7_InboundQueue</cdb-routing-rule>
+			
+			<!-- Large Branches -->
+			<cdb-routing-rule branchCode="LAX">CDBCollector_CDBIMPORT1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ORD">CDBCollector_CDBIMPORT2_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CPC">CDBCollector_CDBIMPORT2_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JFK">CDBCollector_CDBIMPORT2_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SFO">CDBCollector_CDBIMPORT2_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LRD">CDBCollector_CDBIMPORT3_InboundQueue</cdb-routing-rule>
+			
+			<!-- Medium Branches -->
+			<cdb-routing-rule branchCode="DFW">CDBCollector_CDBIMPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ORF">CDBCollector_CDBIMPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SEA">CDBCollector_CDBIMPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ELP">CDBCollector_CDBIMPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SAV">CDBCollector_CDBIMPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ATL">CDBCollector_CDBIMPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MEM">CDBCollector_CDBIMPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BOS">CDBCollector_CDBIMPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="YYZ">CDBCollector_CDBIMPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="IAH">CDBCollector_CDBIMPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ZZZ">CDBCollector_CDBIMPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="AMS">CDBCollector_CDBIMPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CLE">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="HKG">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			
+			<!-- Small Branches -->
+			<cdb-routing-rule branchCode="DTW">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="EWR">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CMH">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LHR">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PDX">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SDF">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CLT">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MSP">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CHS">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JNB">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MFE">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MIA">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NLD">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="IND">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SAN">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="STL">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PHL">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TUL">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MVD">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+            <cdb-routing-rule branchCode="HAJ">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+            <cdb-routing-rule branchCode="CPH">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+            <cdb-routing-rule branchCode="PTY">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+            <cdb-routing-rule branchCode="HNL">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+            <cdb-routing-rule branchCode="AMD">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+            <cdb-routing-rule branchCode="HYD">CDBCollector_CDBIMPORT5_InboundQueue</cdb-routing-rule>
+		</cdb-application-queue>
+		
+		<cdb-application-queue name="CDBEXPORT">
+			<default-routing-rule>CDBCollector_CDBEXPORT0_InboundQueue</default-routing-rule>
+			<failed-routing-rule>CDBCollector_CDBEXPORT-FAILED_InboundQueue</failed-routing-rule>
+            <system-destin-default revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue</system-destin-default>
+            <system-destin-default revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</system-destin-default>
+
+			<!-- Apple Export -->
+			<cdb-routing-rule branchCode="SHA" revenueSysDestin="APPLSFO">CDBCollector_CDBEXPORT8_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PDX" revenueSysDestin="APPLSFO">CDBCollector_CDBEXPORT8_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LHR" revenueSysDestin="APPLSFO">CDBCollector_CDBEXPORT8_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MSP" revenueSysDestin="APPLSFO">CDBCollector_CDBEXPORT8_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SIN" revenueSysDestin="APPLSFO">CDBCollector_CDBEXPORT8_InboundQueue</cdb-routing-rule>
+			
+			<!-- WalMart Branches (SE Asia) -->
+			<cdb-routing-rule branchCode="BJS">CDBCollector_CDBEXPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BKK">CDBCollector_CDBEXPORT6_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DLC">CDBCollector_CDBEXPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="EDIC">CDBCollector_CDBEXPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JHB">CDBCollector_CDBEXPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JKT">CDBCollector_CDBEXPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="KUL">CDBCollector_CDBEXPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MNL">CDBCollector_CDBEXPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NGB">CDBCollector_CDBEXPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NKG">CDBCollector_CDBEXPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PEN">CDBCollector_CDBEXPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PNH">CDBCollector_CDBEXPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SEL">CDBCollector_CDBEXPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SGN">CDBCollector_CDBEXPORT6_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SHA">CDBCollector_CDBEXPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SIN">CDBCollector_CDBEXPORT6_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SUB">CDBCollector_CDBEXPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SYD">CDBCollector_CDBEXPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TAO">CDBCollector_CDBEXPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TPE">CDBCollector_CDBEXPORT6_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TSN">CDBCollector_CDBEXPORT7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TYO">CDBCollector_CDBEXPORT5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="XMN">CDBCollector_CDBEXPORT7_InboundQueue</cdb-routing-rule>
+			
+			<!-- Large Branches -->
+			<cdb-routing-rule branchCode="HKG">CDBCollector_CDBEXPORT1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NHP">CDBCollector_CDBEXPORT2_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NH1">CDBCollector_CDBEXPORT2_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SZX">CDBCollector_CDBEXPORT2_InboundQueue</cdb-routing-rule>
+			
+			<!-- Medium Branches -->
+			<cdb-routing-rule branchCode="ORD">CDBCollector_CDBEXPORT2_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="GDL">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MAA">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LAX">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="IAH">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SFO">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CMB">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			
+			<!-- Small Branches -->
+			<cdb-routing-rule branchCode="MIL">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DAC">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JFK">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MIA">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ATL">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BOS">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BOM">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DTW">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SEA">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DFW">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ORF">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BCN">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="AMS">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="IST">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="LHR">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="FLR">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="YYZ">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CAN">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DEL">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="KHI">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="GUA">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="FRA">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CVG">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CLE">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="STR">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MSP">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="EWR">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="OSA">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DUR">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MEM">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CAI">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PDX">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BRU">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PHL">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="CDG">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="ELP">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TUL">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MVD">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+            <cdb-routing-rule branchCode="HAJ">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+            <cdb-routing-rule branchCode="CPH">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+            <cdb-routing-rule branchCode="PTY">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+            <cdb-routing-rule branchCode="HNL">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+            <cdb-routing-rule branchCode="AMD">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+            <cdb-routing-rule branchCode="HYD">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+		</cdb-application-queue>
+		
+		<cdb-application-queue name="CCXORDER">
+			<default-routing-rule>CDBCollector_CCXORDER0_InboundQueue</default-routing-rule>
+			<failed-routing-rule>CDBCollector_CCXORDER-FAILED_InboundQueue</failed-routing-rule>
+			
+			<!-- WalMart Branches (SE Asia) -->
+			<cdb-routing-rule branchCode="BJS">CDBCollector_CCXORDER5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="BKK">CDBCollector_CCXORDER7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="DLC">CDBCollector_CCXORDER6_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="EDIC">CDBCollector_CCXORDER3_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JHB">CDBCollector_CCXORDER4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="JKT">CDBCollector_CCXORDER7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="KUL">CDBCollector_CCXORDER4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="MNL">CDBCollector_CCXORDER4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NGB">CDBCollector_CCXORDER7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NKG">CDBCollector_CCXORDER6_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PEN">CDBCollector_CCXORDER7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="PNH">CDBCollector_CCXORDER4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SEL">CDBCollector_CCXORDER4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SGN">CDBCollector_CCXORDER6_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SHA">CDBCollector_CCXORDER4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SIN">CDBCollector_CCXORDER7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SUB">CDBCollector_CCXORDER4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SYD">CDBCollector_CCXORDER4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TAO">CDBCollector_CCXORDER5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TPE">CDBCollector_CCXORDER7_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TSN">CDBCollector_CCXORDER5_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="TYO">CDBCollector_CCXORDER4_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="XMN">CDBCollector_CCXORDER7_InboundQueue</cdb-routing-rule>
+			
+			<!-- Large Branches -->
+			<cdb-routing-rule branchCode="HKG">CDBCollector_CCXORDER1_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="SZX">CDBCollector_CCXORDER2_InboundQueue</cdb-routing-rule>
+			
+			<!-- Medium Branches -->
+			<cdb-routing-rule branchCode="NHP">CDBCollector_CCXORDER2_InboundQueue</cdb-routing-rule>
+			<cdb-routing-rule branchCode="NH1">CDBCollector_CCXORDER2_InboundQueue</cdb-routing-rule>
+
+            <!-- Small Branches -->
+            <cdb-routing-rule branchCode="PTY">CDBCollector_CCXORDER2_InboundQueue</cdb-routing-rule>
+            <cdb-routing-rule branchCode="HNL">CDBCollector_CCXORDER2_InboundQueue</cdb-routing-rule>
+            <cdb-routing-rule branchCode="AMD">CDBCollector_CCXORDER2_InboundQueue</cdb-routing-rule>
+            <cdb-routing-rule branchCode="HYD">CDBCollector_CCXORDER2_InboundQueue</cdb-routing-rule>
+            
+		</cdb-application-queue>
+	</environment>	
+</routing-rules>

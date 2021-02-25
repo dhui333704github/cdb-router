@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routing-rules xmlns="http://www.expd.com/xsd/cdb"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.expd.com/xsd/cdb routing-rules.xsd">
+    <environment domain="QA">
+       <cdb-application-queue name="VDFTest1">
+           <default-routing-rule>CDBCollector_CDBEXPORT0_InboundQueue</default-routing-rule>
+           <failed-routing-rule>CDBCollector_CDBEXPORT-FAILED_InboundQueue</failed-routing-rule>
+           <system-destin-default revenueSysDestin="JOE">CDBCollector_CDBEXPORT2_InboundQueue</system-destin-default>
+           
+           <cdb-routing-rule branchCode="CHQ" revenueSysDestin="JOE">CDBCollector_CDBEXPORT3_InboundQueue</cdb-routing-rule>
+           <cdb-routing-rule branchCode="CHQ">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+           <cdb-routing-rule branchCode="HKG">CDBCollector_CDBEXPORT4_InboundQueue</cdb-routing-rule>
+       </cdb-application-queue>
+    </environment>
+</routing-rules>

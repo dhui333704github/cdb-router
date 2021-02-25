@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.expd.com/xsd/cdb" xmlns:cdb="http://www.expd.com/xsd/cdb"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<!-- Revised cdb routing rules to include new attribute 'priority' -->
+	<xs:element name="routing-rules" type="cdb:RoutingRulesType">
+		<xs:annotation>
+			<xs:documentation> The root element for CDB routing rules </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="CDBRoutingRuleType">
+		<xs:annotation>
+			<xs:documentation>A CDB routing rule</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="xs:token">
+				<xs:attribute name="branchCode" use="required">
+					<xs:simpleType>
+						<xs:restriction base="xs:token">
+							<xs:pattern value="[A-Z][A-Z0-9]{1,3}"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+				<xs:attribute name="revenueSysDestin" use="optional">
+					<xs:simpleType>
+						<xs:restriction base="xs:token">
+							<xs:pattern value="[A-Z0-9]+"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+				<xs:attribute name="priority" type="cdb:PriorityType"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="CopyRoutingRuleType">
+		<xs:annotation>
+			<xs:documentation> A copy routing rule (e.g., copy a message for OMB)
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="xs:token">
+				<xs:attribute name="revenueSysDestin" use="required">
+					<xs:simpleType>
+						<xs:restriction base="xs:token">
+							<xs:pattern value="[A-Z0-9]+"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="DefaultSystemDestin">
+	   <xs:annotation>
+	       <xs:documentation>
+	           Used to specify a default queue for a particular system destin when
+	           no CDBRoutingRuleType is found for the branch. These are processed
+	           after the cdb-routing-rule and before the default-routing-rule. 
+	       </xs:documentation>
+	   </xs:annotation>
+	   <xs:simpleContent>
+	       <xs:extension base="xs:token">
+	           <xs:attribute name="revenueSysDestin" use="required">
+	               <xs:simpleType>
+	                   <xs:restriction base="xs:token">
+	                       <xs:pattern value="[A-Z0-9]+"/>
+	                   </xs:restriction>
+	               </xs:simpleType>
+	           </xs:attribute>
+	       </xs:extension>
+	   </xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="CDBApplicationQueueType">
+		<xs:annotation>
+			<xs:documentation> routing rules section for a CDB application queue (e.g., CDBIMPORT,
+				CDBEXPORT, CCXORDER) </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element type="xs:token" name="default-routing-rule">
+				<xs:annotation>
+					<xs:documentation> default routing rule </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element type="xs:token" name="failed-routing-rule">
+				<xs:annotation>
+					<xs:documentation> failed message routing rule </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element type="cdb:DefaultSystemDestin" name="system-destin-default" 
+			     maxOccurs="unbounded" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Default queues for specific system destins</xs:documentation>
+                </xs:annotation>
+			</xs:element>
+			<xs:element type="cdb:CDBRoutingRuleType" name="cdb-routing-rule" maxOccurs="unbounded"
+				minOccurs="0">
+				<xs:annotation>
+					<xs:documentation> branch-specific CDB routing rules </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element type="cdb:CopyRoutingRuleType" name="copy-routing-rule"
+				maxOccurs="unbounded" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation> copy routing rules </xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="name" type="cdb:AppType" use="required"> </xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="RoutingRulesType">
+		<xs:annotation>
+			<xs:documentation> The root type for CDB routing rules </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element type="cdb:EnvironmentType" name="environment" maxOccurs="unbounded"
+				minOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="EnvironmentType">
+		<xs:annotation>
+			<xs:documentation> Contains routing rules for an application domain (e.g., dev, qa,
+				prod) </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element type="cdb:CDBApplicationQueueType" name="cdb-application-queue"
+				maxOccurs="unbounded" minOccurs="1"/>
+		</xs:sequence>
+		<xs:attribute name="domain" type="cdb:DomainType" use="required"> </xs:attribute>
+	</xs:complexType>
+	<xs:simpleType name="DomainType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="INT"/>
+			<xs:enumeration value="DEV"/>
+			<xs:enumeration value="QA"/>
+			<xs:enumeration value="PROD"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="AppType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="CCXORDER"/>
+			<xs:enumeration value="CDBEXPORT"/>
+			<xs:enumeration value="CDBIMPORT"/>
+            <xs:enumeration value="ORDERS"/>
+			<xs:enumeration value="VDFTest1"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="PriorityType">
+		<xs:annotation>
+			<xs:documentation> priority has been added for CDBIMPORT messages that need priority
+				handling. In the future, priority may be extended to include LOW and MEDIUM
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="HIGH"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
