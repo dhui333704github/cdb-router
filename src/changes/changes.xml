@@ -1,0 +1,26 @@
+<document xmlns="http://maven.apache.org/changes/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/changes/1.0.0 http://maven.apache.org/xsd/changes-1.0.0.xsd">
+	<properties>
+		<title>Changes Report</title>
+		<author email="[***  REPLACE WITH DEVELOPER/PROJECT MANAGER  ***]">[***  REPLACE WITH DEVELOPER/PROJECT MANAGER NAME  ***]</author>
+	</properties>
+	<body>
+
+<!--		<release version="1.0" date="YYYY-MM-DD" description="initial release">-->
+<!--			<action dev="[***  REPLACE WITH DEVELOPER NAME OR USERID  ***]" type="add">-->
+<!--        		A sample add entry.-->
+<!--			</action>-->
+<!--			<action dev="[***  REPLACE WITH DEVELOPER NAME OR USERID  ***]" type="update">-->
+<!--        		A sample update entry.-->
+<!--			</action>-->
+<!--			<action dev="[***  REPLACE WITH DEVELOPER NAME OR USERID  ***]" type="fix" issue="60964">-->
+<!--  				A sample fix entry with a generated link to bugzilla.  -->
+<!--			</action>-->
+<!--			<action dev="[***  REPLACE WITH DEVELOPER NAME OR USERID  ***]" type="remove">-->
+<!--        		A sample remove entry.-->
+<!--			</action>-->
+<!--	    </release>-->
+	    
+	</body>
+</document>
