@@ -9,6 +9,7 @@ import java.awt.event.WindowEvent;
 import java.util.Timer;
 import java.util.TimerTask;
 import javax.swing.JFrame;
+
 import org.jfree.chart.ChartFrame;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.MeterLegend;
@@ -22,10 +23,10 @@ import com.expd.arch.messaging.router.PropertyBasedRouter;
 
 public class RouterThroughputChart implements ChartListener {
     private static long MAX_IDLE_BEFORE_RESET = 5000;
+    PropertyBasedRouter router;
     private MeterPlot plot;
     private JFrame chartFrame;
     private long lastUpdate;
-    PropertyBasedRouter router;
 
     public RouterThroughputChart(PropertyBasedRouter router) {
         this.router = router;
@@ -59,11 +60,9 @@ public class RouterThroughputChart implements ChartListener {
 
     /**
      * Displays a meter chart.
-     * 
-     * @param value
-     *            the value.
-     * @param shape
-     *            the dial shape.
+     *
+     * @param value the value.
+     * @param shape the dial shape.
      */
     private void displayMeterChart() {
         DefaultValueDataset data = new DefaultValueDataset(0.0);
