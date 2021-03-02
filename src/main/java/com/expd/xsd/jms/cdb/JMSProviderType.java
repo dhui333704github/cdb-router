@@ -19,9 +19,9 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 /**
  * <p>Java class for JMSProviderType complex type.
- * 
+ *
  * <p>The following schema fragment specifies the expected content contained within this class.
- * 
+ *
  * <pre>
  * &lt;complexType name="JMSProviderType">
  *   &lt;complexContent>
@@ -43,16 +43,14 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  *   &lt;/complexContent>
  * &lt;/complexType>
  * </pre>
- * 
- * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "JMSProviderType", propOrder = {
-    "messagingProviderHostName",
-    "messagingProviderPortNumber",
-    "userName",
-    "password",
-    "brokerNode"
+        "messagingProviderHostName",
+        "messagingProviderPortNumber",
+        "userName",
+        "password",
+        "brokerNode"
 })
 public class JMSProviderType {
 
@@ -75,11 +73,9 @@ public class JMSProviderType {
 
     /**
      * Gets the value of the messagingProviderHostName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getMessagingProviderHostName() {
         return messagingProviderHostName;
@@ -87,11 +83,9 @@ public class JMSProviderType {
 
     /**
      * Sets the value of the messagingProviderHostName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setMessagingProviderHostName(String value) {
         this.messagingProviderHostName = value;
@@ -99,11 +93,9 @@ public class JMSProviderType {
 
     /**
      * Gets the value of the messagingProviderPortNumber property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getMessagingProviderPortNumber() {
         return messagingProviderPortNumber;
@@ -111,11 +103,9 @@ public class JMSProviderType {
 
     /**
      * Sets the value of the messagingProviderPortNumber property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setMessagingProviderPortNumber(String value) {
         this.messagingProviderPortNumber = value;
@@ -123,11 +113,9 @@ public class JMSProviderType {
 
     /**
      * Gets the value of the userName property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getUserName() {
         return userName;
@@ -135,11 +123,9 @@ public class JMSProviderType {
 
     /**
      * Sets the value of the userName property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setUserName(String value) {
         this.userName = value;
@@ -147,11 +133,9 @@ public class JMSProviderType {
 
     /**
      * Gets the value of the password property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getPassword() {
         return password;
@@ -159,11 +143,9 @@ public class JMSProviderType {
 
     /**
      * Sets the value of the password property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setPassword(String value) {
         this.password = value;
@@ -171,11 +153,9 @@ public class JMSProviderType {
 
     /**
      * Gets the value of the brokerNode property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     *
+     * @return possible object is
+     * {@link String }
      */
     public String getBrokerNode() {
         return brokerNode;
@@ -183,11 +163,9 @@ public class JMSProviderType {
 
     /**
      * Sets the value of the brokerNode property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     *
+     * @param value allowed object is
+     *              {@link String }
      */
     public void setBrokerNode(String value) {
         this.brokerNode = value;

@@ -14,29 +14,30 @@ import com.expd.app.cdb.util.EDIRecordRateTracker;
 /**
  * Listens for and handles local inbound messages.
  */
-public class PropertyBasedRouterMessageListener 
-implements MessageListener {
+public class PropertyBasedRouterMessageListener
+        implements MessageListener {
     private static Logger logger = Logger.getLogger(
-        PropertyBasedRouterMessageListener.class);
+            PropertyBasedRouterMessageListener.class);
     private PropertyBasedRouter router;
     private ActivityMonitor activityMonitor;
 
     /**
-     * PropertyBasedRouterMessageListener constructor; 
-     * 
-     * @param router PropertyBasedRouter instance, required
+     * PropertyBasedRouterMessageListener constructor;
+     *
+     * @param router          PropertyBasedRouter instance, required
      * @param activityMonitor not required; may be null
      */
-    public PropertyBasedRouterMessageListener(PropertyBasedRouter router, 
-        ActivityMonitor activityMonitor) {
+    public PropertyBasedRouterMessageListener(PropertyBasedRouter router,
+                                              ActivityMonitor activityMonitor) {
         this.router = router;
         this.activityMonitor = activityMonitor;
     }
 
     /**
      * SonicMQ message handler callback method.
-     * 
+     * <p>
      * (non-Javadoc)
+     *
      * @see javax.jms.MessageListener#onMessage(javax.jms.Message)
      */
     public void onMessage(Message aMessage) {
@@ -49,20 +50,20 @@ implements MessageListener {
             // matches the corresponding properties in the message:
             this.router.sendCopy(aMessage);
             this.router.commitProviderQueueSession();
-            if(activityMonitor != null) {
+            if (activityMonitor != null) {
                 this.activityMonitor.incrementActivityCount();
             }
         } catch (IllegalArgumentException problemMessageException) {
             // problem routing aMessage -- place it in failed delivery queue for
             // the router; TODO why is this sent on an IllegalArgumentException, 
             // but nothing else??
-            logger.warn("An error occurred while routing a message.", 
-                problemMessageException);
+            logger.warn("An error occurred while routing a message.",
+                    problemMessageException);
             this.routeToFailedQueue(aMessage);
 
             try {
                 this.router.commitProviderQueueSession();
-            } catch (JMSException e) { 
+            } catch (JMSException e) {
                 handleFatalException(e);
             }
 
@@ -122,7 +123,7 @@ implements MessageListener {
             logger.warn("An error occurred while sending an email notification", e);
         }
     }
-    
+
     private void handleFatalException(Throwable t) {
         String fatalErrorMessage = "Fatal error - router is shutting down from PropertyBasedRouterMessageListener: "
                 + t.getMessage();
