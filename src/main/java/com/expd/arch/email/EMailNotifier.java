@@ -5,6 +5,7 @@ import javax.mail.SendFailedException;
 import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.MimeMessage;
+
 import com.expd.arch.email.exceptions.EMailNotifierException;
 import com.expd.arch.email.exceptions.EMailSenderFailureException;
 import com.expd.arch.email.exceptions.SMTPUnavailableException;
@@ -13,9 +14,9 @@ import com.expd.arch.email.exceptions.SMTPUnavailableException;
  * EMailNotifier provides a component-based JavaMail capability.
  */
 public class EMailNotifier {
-    private java.lang.String smtpHost;
     private static final java.lang.String SMTP_HOST_KEY = "mail.smtp.host";
     private static final java.lang.String SMTP_HOSTNAME = "smtpHostName";
+    private java.lang.String smtpHost;
     private Session javaMailSession = null;
     private Properties properties;
     private MimeMessageBuilder mimeMessageBuilder = null;
@@ -55,8 +56,16 @@ public class EMailNotifier {
         return javaMailSession;
     }
 
+    private void setJavaMailSession(javax.mail.Session newSession) {
+        javaMailSession = newSession;
+    }
+
     private java.lang.String getSmtpHost() {
         return smtpHost;
+    }
+
+    private void setSmtpHost(java.lang.String newSmtpHost) {
+        smtpHost = newSmtpHost;
     }
 
     private void initialize() throws EMailNotifierException {
@@ -93,14 +102,6 @@ public class EMailNotifier {
             e.printStackTrace();
             throw new EMailSenderFailureException(e.toString());
         }
-    }
-
-    private void setJavaMailSession(javax.mail.Session newSession) {
-        javaMailSession = newSession;
-    }
-
-    private void setSmtpHost(java.lang.String newSmtpHost) {
-        smtpHost = newSmtpHost;
     }
 
     private void toggleDebugSession() {

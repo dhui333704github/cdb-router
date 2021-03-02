@@ -6,19 +6,19 @@ package com.expd.arch.email.exceptions;
  * will result in an EIMailPayloadPropertyMissingException.
  */
 public class EIMailPayloadPropertyMissingException
-	extends EMailNotifierException {
-		
-	/**
-	 * EIMailPayloadPropertyMissingException constructor.
-	 */
-	public EIMailPayloadPropertyMissingException() {
-		super();
-	}
-	
-	/**
-	 * EIMailPayloadPropertyMissingException constructor.
-	 */
-	public EIMailPayloadPropertyMissingException(String message) {
-		super(message);
-	}
+        extends EMailNotifierException {
+
+    /**
+     * EIMailPayloadPropertyMissingException constructor.
+     */
+    public EIMailPayloadPropertyMissingException() {
+        super();
+    }
+
+    /**
+     * EIMailPayloadPropertyMissingException constructor.
+     */
+    public EIMailPayloadPropertyMissingException(String message) {
+        super(message);
+    }
 }

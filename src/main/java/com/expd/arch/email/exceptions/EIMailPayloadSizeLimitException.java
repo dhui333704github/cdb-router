@@ -6,18 +6,18 @@ package com.expd.arch.email.exceptions;
  * will result in an EIMailPayloadSizeLimitException.
  */
 public class EIMailPayloadSizeLimitException extends EMailNotifierException {
-	
-	/**
-	 * EIMailPayloadSizeLimitException constructor.
-	 */
-	public EIMailPayloadSizeLimitException() {
-		super();
-	}
-	
-	/**
-	 * EIMailPayloadSizeLimitException constructor.
-	 */
-	public EIMailPayloadSizeLimitException(String message) {
-		super(message);
-	}
+
+    /**
+     * EIMailPayloadSizeLimitException constructor.
+     */
+    public EIMailPayloadSizeLimitException() {
+        super();
+    }
+
+    /**
+     * EIMailPayloadSizeLimitException constructor.
+     */
+    public EIMailPayloadSizeLimitException(String message) {
+        super(message);
+    }
 }
