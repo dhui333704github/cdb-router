@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:jms="http://www.expd.com/xsd/jms/cdb"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.expd.com/xsd/jms/cdb"
+           elementFormDefault="qualified">
+    <xs:element xmlns:cdb="http://www.expd.com/xsd/jms/cdb"
+                name="router-configurations"
+                type="cdb:RouterConfigurationsType"/>
+    <xs:complexType name="JMSEnvironmentType">
+        <xs:sequence>
+            <xs:element xmlns:cdb="http://www.expd.com/xsd/jms/cdb" type="cdb:JMSProviderType"
+                        name="jms-provider"/>
+            <xs:element name="backup-jms-provider"
+                        type="jms:JMSProviderType" maxOccurs="1" minOccurs="0">
+            </xs:element>
+            <xs:element name="email-contact" maxOccurs="unbounded"
+                        minOccurs="1">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value=".+\@.+"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute type="jms:JMSDomainType" name="domain"
+                      use="required"/>
+    </xs:complexType>
+    <xs:complexType name="RouterConfigurationsType">
+        <xs:sequence>
+            <xs:element xmlns:cdb="http://www.expd.com/xsd/jms/cdb" type="cdb:JMSEnvironmentType"
+                        name="environment" maxOccurs="unbounded"
+                        minOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="JMSDomainType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="INT"/>
+            <xs:enumeration value="DEV"/>
+            <xs:enumeration value="QA"/>
+            <xs:enumeration value="PROD"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="JMSProviderType">
+        <xs:sequence>
+            <xs:element name="messagingProviderHostName"
+                        type="xs:token">
+            </xs:element>
+            <xs:element name="messagingProviderPortNumber">
+                <xs:simpleType>
+                    <xs:restriction base="xs:token">
+                        <xs:pattern value="\d+"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element type="xs:token" name="userName" maxOccurs="1" minOccurs="0"/>
+            <xs:element type="xs:token" name="password" maxOccurs="1" minOccurs="0"/>
+            <xs:element name="brokerNode" type="xs:token" maxOccurs="1" minOccurs="0"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

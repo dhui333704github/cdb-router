@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routing-rules xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns="http://www.expd.com/xsd/cdb"
+               xsi:schemaLocation="http://www.expd.com/xsd/cdb routing-rules.xsd">
+    <environment domain="QA">
+        <cdb-application-queue name="VDFTest1">
+            <default-routing-rule>CDBCollector_VDFTest2_InboundQueue</default-routing-rule>
+            <failed-routing-rule>CDBCollector_CDBEXPORT-FAILED_InboundQueue</failed-routing-rule>
+            <cdb-routing-rule branchCode="HKG" revenueSysDestin="TEST">CDBCollector_VDFTest6_InboundQueue
+            </cdb-routing-rule>
+            <cdb-routing-rule branchCode="SNN">CDBCollector_VDFTest3_InboundQueue</cdb-routing-rule>
+
+        </cdb-application-queue>
+        <cdb-application-queue name="CDBEXPORT">
+            <default-routing-rule>CDBCollector_CDBIMPORT_InboundQueue</default-routing-rule>
+            <failed-routing-rule>CDBCollector_CDBEXPORT-FAILED_InboundQueue</failed-routing-rule>
+            <system-destin-default revenueSysDestin="AIRCARGO">CDBCollector_AIRCARGO1_InboundQueue
+            </system-destin-default>
+            <system-destin-default revenueSysDestin="AIREUENS">CDBCollector_AIRHTS1_InboundQueue</system-destin-default>
+
+        </cdb-application-queue>
+        <cdb-application-queue name="CDBIMPORT">
+            <default-routing-rule>CDBCollector_CDBIMPORT1_InboundQueue</default-routing-rule>
+            <failed-routing-rule>CDBCollector_CDBIMPORT-FAILED_InboundQueue</failed-routing-rule>
+        </cdb-application-queue>
+        <cdb-application-queue name="CCXORDER">
+            <default-routing-rule>CDBCollector_CCXORDER1_InboundQueue</default-routing-rule>
+            <failed-routing-rule>CDBCollector_CCXORDER-FAILED_InboundQueue</failed-routing-rule>
+        </cdb-application-queue>
+    </environment>
+</routing-rules>
