@@ -138,22 +138,22 @@
         <dependency>
             <groupId>com.sonicsw</groupId>
             <artifactId>sonic-client</artifactId>
-            <version>7.6.2.28</version>
+            <version>10.0.5.1</version>
         </dependency>
         <dependency>
             <groupId>com.sonicsw</groupId>
             <artifactId>sonic-crypto</artifactId>
-            <version>7.6.2.28</version>
+            <version>10.0.5.1</version>
         </dependency>
         <dependency>
             <groupId>com.sonicsw</groupId>
             <artifactId>sonic-selector</artifactId>
-            <version>7.6.2.28</version>
+            <version>10.0.5.1</version>
         </dependency>
         <dependency>
             <groupId>com.sonicsw</groupId>
             <artifactId>sonic-xmessage</artifactId>
-            <version>7.6.2.28</version>
+            <version>10.0.5.1</version>
         </dependency>
         <dependency>
             <groupId>activation</groupId>
