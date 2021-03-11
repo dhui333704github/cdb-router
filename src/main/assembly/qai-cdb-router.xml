@@ -19,6 +19,9 @@ xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assemb
                 <include>dt_router_order.sh</include>
                 <include>router_export.sh</include>
                 <include>router_import.sh</include>
+                <include>router_order.bat</include>
+                <include>router_export.bat</include>
+                <include>router_import.bat</include>
                 <include>router_order.sh</include>
                 <include>Rtr_Check.sh</include>
             </includes>
