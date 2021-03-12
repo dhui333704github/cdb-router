@@ -10,7 +10,7 @@ xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assemb
     <includeBaseDirectory>false</includeBaseDirectory>
     <fileSets>
         <fileSet>
-            <lineEnding>unix</lineEnding>
+            <lineEnding>windows</lineEnding>
             <fileMode>744</fileMode>
             <directory>${basedir}/src/main/build/QAI</directory>
             <includes>
@@ -28,7 +28,7 @@ xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assemb
             <outputDirectory>/</outputDirectory>
         </fileSet>
         <fileSet>
-            <lineEnding>unix</lineEnding>
+            <lineEnding>windows</lineEnding>
             <directory>${basedir}/src/main/build/QAI/resources</directory>
             <includes>
                 <include>client-messaging.properties</include>
