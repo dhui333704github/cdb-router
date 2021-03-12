@@ -5,6 +5,7 @@ set LIB_DIR=lib
 set CONF_DIR=resources
 set MAIN_CLASS=com.expd.arch.messaging.router.PropertyBasedRouter
 set JAVA_CMD="C:\Program Files (x86)\Common Files\Java\zulu11.45.27-ca-jdk11.0.10-win_x64\bin\java"  
+color 3f
 
 REM ***** Use LIB_DIR to construct classpath ********
 setlocal EnableDelayedExpansion
