@@ -14,6 +14,6 @@ endlocal & set MY_CLASSPATH=%CONF_DIR%%TEMP_CP%
 
 REM  ******* Start the program ************************
 
-%JAVA_CMD% -Xmx256m -Xms256m  -cp  %MY_CLASSPATH%  -Ddomain=QA -DSTATUS_PROGRAM_ID=Rtr_1 -DinboundQueue=CDBCollector_CDBIMPORT -DsleepBeforeAttemptingRecovery=10000 -DsmtpHostName=exch-smtp.expeditors.com %MAIN_CLASS% 
+%JAVA_CMD% -Xmx256m -Xms256m  -cp  %MY_CLASSPATH%  -Ddomain=QA -DSTATUS_PROGRAM_ID=RTR_I -DinboundQueue=CDBCollector_CDBIMPORT -DsleepBeforeAttemptingRecovery=10000 -DsmtpHostName=exch-smtp.expeditors.com %MAIN_CLASS%
 
 pause
